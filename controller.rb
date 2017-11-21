@@ -34,3 +34,7 @@ games = Game.new(params[:hand1], params[:hand2])
 @winner = games.compare
 erb ( :winner )
 end
+
+get '/rules' do
+  erb ( :rules)
+end
