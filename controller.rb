@@ -30,6 +30,7 @@ end
 # end
 
 get '/compare/:hand1/:hand2' do
-game = Game.new(params[:hand1], params[:hand2])
-return game.compare
+games = Game.new(params[:hand1], params[:hand2])
+@winner = games.compare
+erb ( :winner )
 end
