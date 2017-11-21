@@ -19,7 +19,7 @@ class Game
     when @hand1=="paper" && @hand2=="scissors"
       result = "#{@hand2} wins"
     when @hand1=="paper" && @hand2=="rock"
-      result = "#{@hand2} wins"
+      result = "#{@hand1} wins"
     end
   end
 
